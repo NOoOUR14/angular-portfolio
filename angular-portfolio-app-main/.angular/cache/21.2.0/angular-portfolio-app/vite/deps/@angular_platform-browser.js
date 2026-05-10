@@ -19,7 +19,7 @@ import {
   withI18nSupport,
   withIncrementalHydration,
   withNoHttpTransferCache
-} from "./chunk-VBUF7OY4.js";
+} from "./chunk-JWA5GIGE.js";
 import {
   BrowserDomAdapter,
   BrowserGetTestability,
@@ -29,7 +29,7 @@ import {
   createApplication,
   platformBrowser,
   provideProtractorTestingSupport
-} from "./chunk-TDEIZGTY.js";
+} from "./chunk-ECHOI7NW.js";
 import {
   DomEventsPlugin,
   DomRendererFactory2,
@@ -38,13 +38,11 @@ import {
   EventManagerPlugin,
   REMOVE_STYLES_ON_COMPONENT_DESTROY,
   SharedStylesHost
-} from "./chunk-YAAPOAJO.js";
-import "./chunk-LGA3D4UM.js";
-import "./chunk-N3NJBMXQ.js";
+} from "./chunk-6CXDWNOV.js";
 import {
   getDOM
-} from "./chunk-SRGPL5I7.js";
-import "./chunk-WQQ3LCJK.js";
+} from "./chunk-4M6LRX5X.js";
+import "./chunk-K46DPPJU.js";
 import "./chunk-WDMUDEB6.js";
 export {
   BrowserModule,

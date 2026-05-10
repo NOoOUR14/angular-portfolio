@@ -1,4 +1,4 @@
-// ../../node_modules/@angular/cdk/fesm2022/_scrolling-chunk.mjs
+// ../node_modules/@angular/cdk/fesm2022/_scrolling-chunk.mjs
 var RtlScrollAxisType;
 (function(RtlScrollAxisType2) {
   RtlScrollAxisType2[RtlScrollAxisType2["NORMAL"] = 0] = "NORMAL";
@@ -55,7 +55,7 @@ function getRtlScrollAxisType() {
   return rtlScrollAxisType;
 }
 
-// ../../node_modules/@angular/cdk/fesm2022/_test-environment-chunk.mjs
+// ../node_modules/@angular/cdk/fesm2022/_test-environment-chunk.mjs
 function _isTestEnvironment() {
   return typeof __karma__ !== "undefined" && !!__karma__ || typeof jasmine !== "undefined" && !!jasmine || typeof jest !== "undefined" && !!jest || typeof Mocha !== "undefined" && !!Mocha;
 }
@@ -66,4 +66,4 @@ export {
   getRtlScrollAxisType,
   _isTestEnvironment
 };
-//# sourceMappingURL=chunk-F2CBM4CL.js.map
+//# sourceMappingURL=chunk-6GHVRDOX.js.map

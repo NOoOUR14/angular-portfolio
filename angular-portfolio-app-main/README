@@ -1,0 +1,31 @@
+#  Professional MEAN Stack Portfolio
+
+A full-stack dynamic portfolio application built using Angular 21, Node.js, Express, and MongoDB. This project follows the MVC architecture to ensure scalability and clean code.
+
+# Key Features
+* Dynamic Data: Projects and skills are fetched directly from a MongoDB database.
+* MVC Architecture: Separated logic into Models, Controllers, and Routes for better maintenance.
+* RESTful API: Professional backend endpoints for managing portfolio data.
+* Responsive UI: Modern design built with Angular Standalone Components.
+
+# Tech Stack
+* Frontend: Angular 21, TypeScript, Bootstrap.
+* Backend: Node.js, Express.js.
+* Database: MongoDB (Mongoose ODM).
+* Security: Environment variables (.env) & CORS enabled.
+
+# Installation & Setup
+1. Clone the repository:
+   git clone https://github.com/NOoOUR14/portfolio.git
+2. Setup Backend:
+   * Go to portfolio-backend folder.
+   * Run npm install.
+   * Create a .env file and add your MONGO_URI.
+   * Start server: node server.js.
+3. Setup Frontend:
+   * Go to angular-portfolio-app-main folder.
+   * Run npm install.
+   * Start app: ng serve.
+
+---
+Developed by Nour Jad

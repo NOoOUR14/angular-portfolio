@@ -5,18 +5,16 @@ import {
   EventManager,
   EventManagerPlugin,
   SharedStylesHost
-} from "./chunk-YAAPOAJO.js";
+} from "./chunk-6CXDWNOV.js";
 import {
   CommonModule,
-  PLATFORM_BROWSER_ID
-} from "./chunk-N3NJBMXQ.js";
-import {
   DomAdapter,
+  PLATFORM_BROWSER_ID,
   XhrFactory,
   getDOM,
   parseCookieValue,
   setRootDomAdapter
-} from "./chunk-SRGPL5I7.js";
+} from "./chunk-4M6LRX5X.js";
 import {
   ApplicationModule,
   DOCUMENT,
@@ -44,13 +42,13 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-WQQ3LCJK.js";
+} from "./chunk-K46DPPJU.js";
 import {
   __async,
   __spreadValues
 } from "./chunk-WDMUDEB6.js";
 
-// ../../node_modules/@angular/platform-browser/fesm2022/_browser-chunk.mjs
+// ../node_modules/@angular/platform-browser/fesm2022/_browser-chunk.mjs
 var BrowserDomAdapter = class _BrowserDomAdapter extends DomAdapter {
   supportsDOMEvents = true;
   static makeCurrent() {
@@ -429,4 +427,4 @@ export {
   platformBrowser,
   BrowserModule
 };
-//# sourceMappingURL=chunk-TDEIZGTY.js.map
+//# sourceMappingURL=chunk-ECHOI7NW.js.map
