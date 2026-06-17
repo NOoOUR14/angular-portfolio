@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { AccordionComponent } from '../accordion/accordion.component';
+import { ScrollRevealDirective } from '../components/scroll-reveal.directive';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [AccordionComponent],
+  imports: [AccordionComponent, ScrollRevealDirective],
   templateUrl: './skills.component.html',
   styleUrls: [
     './skills.component.css',

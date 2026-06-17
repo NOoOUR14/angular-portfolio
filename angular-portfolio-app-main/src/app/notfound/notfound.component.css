@@ -1,15 +1,26 @@
-@import '../../styles.css';
-.not-found{
-    height: 50vh;
-    padding: 3rem;
+.not-found {
+  height: 50vh;
+  padding: 3rem;
+  background: transparent !important;
+  border: 1.5px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.not-found-title{
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 4rem;
+.not-found-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--text-heading);
+  letter-spacing: -0.03em;
 }
 
-.not-found-p{
-    font-size: 2rem;
+.not-found-p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
 }

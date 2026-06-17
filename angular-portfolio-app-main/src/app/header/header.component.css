@@ -1,45 +1,192 @@
-@import '../../styles.css';
+/* ===== Navbar Wrapper ===== */
+.navbar-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: background var(--transition-base), box-shadow var(--transition-base);
+}
+
+.navbar-wrapper.scrolled {
+  background: rgba(13, 17, 23, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Navbar ===== */
 .navbar {
-    background-color: #27333f;
+  padding: 12px 0;
+  background: transparent !important;
 }
 
 .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* ===== Brand ===== */
 .navbar-brand {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: #f8f9fa;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.navbar-brand:hover {
+  opacity: 0.85;
+}
+
+.brand-bracket {
+  color: var(--accent-primary);
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.brand-name {
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+/* ===== Nav Items ===== */
+.navbar-nav {
+  gap: 4px;
+}
+
+.nav-item {
+  position: relative;
 }
 
 .nav-link {
-    color: #adb5bd;
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 16px !important;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.nav-link:hover,
-.nav-link.active {
-    color: #f8f9fa;
+.nav-link:hover {
+  color: var(--text-primary) !important;
+  background: rgba(255, 255, 255, 0.04);
 }
 
-.nav-number {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: #f8f9fa;
-    margin-right: 5px;
+.nav-link.active-link {
+  color: var(--accent-primary) !important;
+  background: rgba(0, 255, 136, 0.06);
 }
 
-.shadow-sm {
-    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+.nav-indicator {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition: all var(--transition-fast);
 }
 
-.bg-dark {
-    background-color: hsl(212, 26%, 14%) !important;
+.nav-link:hover .nav-indicator {
+  background: var(--accent-primary);
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
 }
 
-.surname {
-    font-size: 20px;
-    font-weight: bold;
+.nav-link.active-link .nav-indicator {
+  background: var(--accent-primary);
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+  width: 6px;
+  height: 6px;
+}
+
+/* ===== Navbar Toggler (Hamburger) ===== */
+.navbar-toggler {
+  border: 1px solid var(--border-default);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: transparent !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-primary);
+}
+
+.navbar-toggler-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 20px;
+  height: 16px;
+  justify-content: center;
+  background: transparent !important;
+}
+
+.toggler-bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--text-secondary);
+  border-radius: 2px;
+  transition: all var(--transition-base);
+}
+
+.navbar-toggler[aria-expanded="true"] .toggler-bar:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.navbar-toggler[aria-expanded="true"] .toggler-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .toggler-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(13, 17, 23, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-default);
+    padding: 12px;
+    margin-top: 12px;
+  }
+
+  .navbar-nav {
+    gap: 2px;
+  }
+
+  .nav-link {
+    padding: 10px 16px !important;
+    border-radius: var(--radius-sm);
+  }
+
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 10px 0;
+  }
 }

@@ -1,14 +1,15 @@
-import { Component , OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../../card/card.component';
 import { Card } from '../_models/card';
 import { Tag } from '../_models/tags';
+import { ScrollRevealDirective } from '../scroll-reveal.directive';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, CardComponent],
+  imports: [CommonModule, CardComponent, ScrollRevealDirective],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })

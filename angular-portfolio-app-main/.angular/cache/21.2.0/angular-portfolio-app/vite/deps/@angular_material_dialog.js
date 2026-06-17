@@ -1,4 +1,13 @@
 import {
+  RtlScrollAxisType,
+  _isTestEnvironment,
+  getRtlScrollAxisType,
+  supportsScrollBehavior
+} from "./chunk-ZAMTXLMW.js";
+import {
+  coerceCssPixelValue
+} from "./chunk-42QFQP6S.js";
+import {
   ArrayDataSource,
   BasePortalOutlet,
   CdkPortalOutlet,
@@ -8,13 +17,7 @@ import {
   TemplatePortal,
   _RecycleViewRepeaterStrategy,
   isDataSource
-} from "./chunk-WADYUIGS.js";
-import {
-  RtlScrollAxisType,
-  _isTestEnvironment,
-  getRtlScrollAxisType,
-  supportsScrollBehavior
-} from "./chunk-6GHVRDOX.js";
+} from "./chunk-XT5A2J6W.js";
 import {
   A11yModule,
   ESCAPE,
@@ -27,28 +30,25 @@ import {
   _getEventTarget,
   _getFocusedElementPierceShadowDom,
   hasModifierKey
-} from "./chunk-VPYKOFW5.js";
+} from "./chunk-YEC7NSXW.js";
 import {
-  coerceCssPixelValue
-} from "./chunk-4MXCLCDH.js";
+  _CdkPrivateStyleLoader
+} from "./chunk-RHBW7EBY.js";
+import "./chunk-O2GHAPET.js";
+import "./chunk-HIPELSTP.js";
+import "./chunk-NUED54WO.js";
+import {
+  Location
+} from "./chunk-MQQF6GWX.js";
 import {
   coerceArray,
   coerceElement,
   coerceNumberProperty
-} from "./chunk-YAXQEDKX.js";
-import {
-  _CdkPrivateStyleLoader
-} from "./chunk-ESWQZPXR.js";
-import "./chunk-JWA5GIGE.js";
+} from "./chunk-H37OSWL3.js";
 import {
   BidiModule,
   Directionality
-} from "./chunk-GJRN55BD.js";
-import "./chunk-ECHOI7NW.js";
-import "./chunk-6CXDWNOV.js";
-import {
-  Location
-} from "./chunk-4M6LRX5X.js";
+} from "./chunk-FUSAXHIW.js";
 import {
   ANIMATION_MODULE_TYPE,
   ApplicationRef,
@@ -130,13 +130,13 @@ import {
   ɵɵstyleProp,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-K46DPPJU.js";
+} from "./chunk-7P4B3SGI.js";
 import {
   __spreadProps,
   __spreadValues
 } from "./chunk-WDMUDEB6.js";
 
-// ../node_modules/@angular/cdk/fesm2022/scrolling.mjs
+// node_modules/@angular/cdk/fesm2022/scrolling.mjs
 var _c0 = ["contentWrapper"];
 var _c1 = ["*"];
 var VIRTUAL_SCROLL_STRATEGY = new InjectionToken("VIRTUAL_SCROLL_STRATEGY");
@@ -1369,7 +1369,7 @@ var ScrollingModule = class _ScrollingModule {
   }], null, null);
 })();
 
-// ../node_modules/@angular/cdk/fesm2022/_overlay-module-chunk.mjs
+// node_modules/@angular/cdk/fesm2022/_overlay-module-chunk.mjs
 var scrollBehaviorSupported = supportsScrollBehavior();
 function createBlockScrollStrategy(injector) {
   return new BlockScrollStrategy(injector.get(ViewportRuler), injector.get(DOCUMENT));
@@ -3862,7 +3862,7 @@ var OverlayModule = class _OverlayModule {
   }], null, null);
 })();
 
-// ../node_modules/@angular/cdk/fesm2022/overlay.mjs
+// node_modules/@angular/cdk/fesm2022/overlay.mjs
 var FullscreenOverlayContainer = class _FullscreenOverlayContainer extends OverlayContainer {
   _renderer = inject(RendererFactory2).createRenderer(null, null);
   _fullScreenEventName;
@@ -3929,7 +3929,7 @@ var FullscreenOverlayContainer = class _FullscreenOverlayContainer extends Overl
   }], () => [], null);
 })();
 
-// ../node_modules/@angular/cdk/fesm2022/dialog.mjs
+// node_modules/@angular/cdk/fesm2022/dialog.mjs
 function CdkDialogContainer_ng_template_0_Template(rf, ctx) {
 }
 var DialogConfig = class {
@@ -4565,7 +4565,7 @@ var DialogModule = class _DialogModule {
   }], null, null);
 })();
 
-// ../node_modules/@angular/material/fesm2022/dialog.mjs
+// node_modules/@angular/material/fesm2022/dialog.mjs
 function MatDialogContainer_ng_template_2_Template(rf, ctx) {
 }
 var MatDialogConfig = class {
